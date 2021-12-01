@@ -1,0 +1,58 @@
+.works {
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  .arrow {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+
+    &.left {
+      left: 100px;
+      transform: rotate(180deg);
+    }
+
+    &.right {
+      right: 100px;
+    }
+  }
+
+  .slider {
+    height: 350px;
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    transition: all 1s;
+    left: 0;
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 500px;
+        background-color: white;
+        display: flex;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        .left {
+          flex: 4;
+          background-color: darkgoldenrod;
+        }
+
+        .right {
+          flex: 8;
+          background-color: darkred;
+        }
+      }
+    }
+  }
+}
