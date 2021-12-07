@@ -6,14 +6,14 @@ const Topbar = ({menuOpen, setMenuOpen}) => {
     <div className={"topbar " + (menuOpen && "active")}>
      <div className="wrapper">
        <div className="left">
-         <a  href="#contact" className="logo">.monica</a>
+         <a  href="#contact" className="logo">Monica</a>
          <div className="itemContainer">
            <Person />
            <span>+234 903 788 22</span>
          </div>
          <div className="itemContainer">
            <Email />
-           <span>mail@veronica.com</span>
+           <span>mail@monica.com</span>
          </div>
        </div>
        <div className="right">
